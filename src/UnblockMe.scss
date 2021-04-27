@@ -1,0 +1,105 @@
+body {
+  background-color: #282c34;
+}
+.container {
+  margin-top: 5%;
+  & h1 {
+    color: white;
+  }
+  & h3 {
+    color: white;
+  }
+  & button {
+    border-radius: 28px;
+    padding: 10px 30px;
+    outline: none !important;
+    border: 2px solid black;
+    margin-right: 2%;
+    margin-left: 2%;
+    background-color: #126e82;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: #126e82;
+    }
+    & .play-icon {
+      display: block;
+      margin: 5px auto 0px;
+    }
+  }
+}
+
+.winning-display {
+  & h1 {
+    color: white;
+    margin-top: 10%;
+  }
+
+  & h3 {
+    color: white;
+    display: inline;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  & button {
+    display: block;
+    border-radius: 28px;
+    padding: 10px 30px;
+    outline: none !important;
+    border: 2px solid black;
+    margin: 2% auto;
+    background-color: #126e82;
+    color: white;
+
+    &:hover {
+      background-color: white;
+      color: #126e82;
+    }
+    & .play-icon {
+      display: block;
+      margin: 5px auto 0px;
+    }
+  }
+}
+
+.board {
+  position: relative;
+  width: 375px;
+  height: 375px;
+  background-color: white;
+  margin: auto;
+  margin-top: 3%;
+
+  & .winbox {
+    position: absolute;
+    height: 75px;
+    width: 7px;
+    left: 370px;
+    top: 150px;
+    background-color: green;
+    z-index: 100;
+  }
+  & .keyBlock-horizontal {
+    width: 150px;
+    height: 75px;
+    background-color: orange;
+    position: absolute;
+    border: 0.25px solid black;
+  }
+
+  .blockers-double-horizontal {
+    width: 150px;
+    height: 75px;
+    background-color: brown;
+    position: absolute;
+    border: 0.25px solid black;
+  }
+  .blockers-double-vertical {
+    border: 0.25px solid black;
+    width: 75px;
+    height: 150px;
+    background-color: brown;
+    position: absolute;
+  }
+}
